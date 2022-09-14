@@ -1,0 +1,56 @@
+Home@Home-PC MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "<bidextech@yahoo.com>"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Home/.ssh/id_rsa):
+Created directory '/c/Users/Home/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Home/.ssh/id_rsa
+Your public key has been saved in /c/Users/Home/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:K6g55cbB5ypOxupuhSKuU9qycYROi60D2csGg/nwOCU <bidextech@yahoo.com>
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                 |
+|                 |
+| .               |
+|o=o.    S        |
+|E==.+..  .       |
+|B^B=.+. .        |
+|BXXo+ ..         |
+|X@++..           |
++----[SHA256]-----+
+
+Home@Home-PC MINGW64 ~
+$ cd ~/ .ssh
+bash: cd: too many arguments
+
+Home@Home-PC MINGW64 ~
+$ cd /.ssh
+bash: cd: /.ssh: No such file or directory
+
+Home@Home-PC MINGW64 ~
+$ cd ~/.ssh
+
+Home@Home-PC MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub
+
+Home@Home-PC MINGW64 ~/.ssh
+$ eval "$(ssh-agent -s)"
+Agent pid 1324
+
+Home@Home-PC MINGW64 ~/.ssh
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Home/.ssh/id_rsa (<bidextech@yahoo.com>)
+
+Home@Home-PC MINGW64 ~/.ssh
+$ ssh-add ~/.ssh/id_rsa | clip
+Identity added: /c/Users/Home/.ssh/id_rsa (<bidextech@yahoo.com>)
+
+Home@Home-PC MINGW64 ~/.ssh
+$ cat ~/.ssh/id_rsa.pub | clip
+
+Home@Home-PC MINGW64 ~/.ssh
+$
