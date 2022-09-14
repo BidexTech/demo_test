@@ -1,0 +1,124 @@
+
+Home@Home-PC MINGW64 ~
+$ cd
+
+Home@Home-PC MINGW64 ~
+$ cd downnloads
+bash: cd: downnloads: No such file or directory
+
+Home@Home-PC MINGW64 ~
+$ cd download
+bash: cd: download: No such file or directory
+
+Home@Home-PC MINGW64 ~
+$ cd downloads
+
+Home@Home-PC MINGW64 ~/downloads
+$ git clone git@github.com:BidexTech/demo_test.git
+Cloning into 'demo_test'...
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Home@Home-PC MINGW64 ~/downloads
+$ git clone git@github.com:BidexTech/demo_test.git
+Cloning into 'demo_test'...
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Home@Home-PC MINGW64 ~/downloads
+$ cd demo
+bash: cd: demo: No such file or directory
+
+Home@Home-PC MINGW64 ~/downloads
+$ cd demo_test
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ dir
+README.md  ssh.txt
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ type readme.md
+bash: type: readme.md: not found
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ notepad readme.md
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ noted ssh.txt
+bash: noted: command not found
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ notepad ssh.txt
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ notepad test.txt
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git add test.txt
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Home@Home-PC.(none)')
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git config --global user.email "Bidextech@yahoo.com"
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git config --global user.name "Abidemi Olasunkanmi"
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git commit -m "initial commit"
+[main bfe9dc2] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes | 156.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:BidexTech/demo_test.git
+   8e4a44c..bfe9dc2  main -> main
+
+Home@Home-PC MINGW64 ~/downloads/demo_test (main)
+$
